@@ -61,8 +61,8 @@ scene.add(new THREE.AmbientLight(0xffffff, 0.5));
 let base = new THREE.Object3D();
 scene.add(base);
 
-const loader = new GLTFLoader().setPath( 'https://threejs.org/examples/models/gltf/DamagedHelmet/glTF/' );
-loader.load( 'DamagedHelmet.gltf', function ( gltf ) {
+const loader = new GLTFLoader();
+loader.load( '4567.gltf', function ( gltf ) {
   gltf.scene.scale.setScalar(2);
   base.add( gltf.scene );
 } );
